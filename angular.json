@@ -36,10 +36,6 @@
           },
 "configurations": {
             "production": {
-              "environmentVariables": {
-                "API_URL": "https://backend-chatwebsocketapp.onrender.com/api",
-                "WS_URL": "https://backend-chatwebsocketapp.onrender.com/chat-websocket"
-              },
               "fileReplacements": [
                 {
                   "replace": "src/app/environments/environment.ts",
