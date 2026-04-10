@@ -1,5 +1,7 @@
 {
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/WebSocketApp/browser",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/browser/index.html" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
