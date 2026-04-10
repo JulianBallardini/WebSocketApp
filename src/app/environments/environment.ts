@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  apiUrl: 'TU_API_URL_AQUI',
-  wsUrl: 'TU_WEBSOCKET_URL_AQUI'
+  apiUrl: 'http://localhost:3000/api',
+  wsUrl: 'http://localhost:3000/chat-websocket'
 };
