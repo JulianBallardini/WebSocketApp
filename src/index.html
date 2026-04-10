@@ -8,6 +8,14 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script>
     window.global = window;
+    window.__env = window.__env || {};
+    var vercelEnv = { API_URL: '', WS_URL: '' };
+    for (var key in vercelEnv) {
+      var envKey = 'VERCEL_' + key;
+      if (typeof window[envKey] !== 'undefined') {
+        window.__env[key] = window[envKey];
+      }
+    }
   </script>
 </head>
 <body>
