@@ -1,6 +1,8 @@
 {
   "routes": [
-    { "src": "/", "dest": "/browser" },
-    { "src": "/(.*)", "dest": "/browser/$1" }
+    { "src": "^/browser/(.*)", "dest": "/browser/$1" },
+    { "src": "^/(.*\\.(js|css|png|jpg|jpeg|gif|ico|svg))$", "dest": "/browser/$1" },
+    { "src": "^/$", "dest": "/browser/index.html" },
+    { "src": "^/(.*)", "dest": "/browser/index.html" }
   ]
 }
